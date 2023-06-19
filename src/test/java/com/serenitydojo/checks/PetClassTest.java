@@ -34,8 +34,8 @@ public class PetClassTest {
         Pet spot = new Cat("Spot", "String", 5);
         Pet hazel = new Hamster("Hazel",  "Wheel", 1);
 
-        assertThat(fido.play(), isEqualTo("plays with bone"));
-        assertThat(spot.play(), isEqualTo("plays with string"));
-        assertThat(hazel.play(), isEqualTo("runs in wheel"));
+        assertThat(fido.play(), equalTo("plays with bone"));
+        assertThat(spot.play(), equalTo("plays with string"));
+        assertThat(hazel.play(), equalTo("runs in wheel"));
     }
 }
