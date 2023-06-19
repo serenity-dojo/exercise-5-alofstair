@@ -1,11 +1,10 @@
 package com.serenitydojo;
 
-public class Cat extends Pet {
+public class Hamster extends Pet{
+
     private String favoriteToy;
 
-    public static final String CAT_PLAY = "plays with string";
-
-    public Cat(String name, String favoriteToy, int age) {
+    public Hamster(String name, String favoriteToy, int age) {
         super(name,age);
         this.favoriteToy = favoriteToy;
     }
@@ -18,8 +17,15 @@ public class Cat extends Pet {
         this.favoriteToy = favoriteToy;
     }
 
+    public static final String HAMSTER_PLAY = "runs in wheel";
+
+    @Override
+    public String favoriteGame() {
+        return super.favoriteGame();
+    }
+
     @Override
     public String play() {
-        return CAT_PLAY;
+        return HAMSTER_PLAY;
     }
 }

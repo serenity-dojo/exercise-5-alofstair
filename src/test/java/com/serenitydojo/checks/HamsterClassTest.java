@@ -20,6 +20,6 @@ public class HamsterClassTest {
 
     @Test
     public void theDogClassShouldHaveAFavoriteToy() throws Exception {
-        assertThat(Class.forName("com.serenitydojo.Hamster").getDeclaredField("favoriteGame").getGenericType()).isEqualTo(String.class);
+        assertThat(Class.forName("com.serenitydojo.Hamster").getDeclaredField("favoriteToy").getGenericType()).isEqualTo(String.class);
     }
 }

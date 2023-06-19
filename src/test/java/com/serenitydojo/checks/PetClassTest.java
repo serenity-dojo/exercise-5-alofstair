@@ -1,11 +1,16 @@
 package com.serenitydojo.checks;
 
+import com.serenitydojo.Cat;
+import com.serenitydojo.Dog;
+import com.serenitydojo.Hamster;
+import com.serenitydojo.Pet;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.hamcrest.CoreMatchers.equalTo;
 
 public class PetClassTest {
     @Test
